@@ -11,6 +11,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
+    background-image: linear-gradient(45deg, #000000,#000000c7,#000000e0);
 }
 
 .container
@@ -26,9 +27,10 @@
 .container_divs
 .input_btn h1{
     color: aliceblue;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .container
 .container_divs
@@ -38,7 +40,7 @@
     outline: none;
     border-radius: 10px;
     height: 35px;
-    width: 70%;
+    width:80%;
     margin-right: 30px;
 }
 .container
@@ -57,20 +59,21 @@
     outline: none;
     cursor: pointer;
     border-radius: 50%;
+    float:right;
 }
 
 
 .container
 .container_divs
 .city_graus{
-    margin: 10px 0px;
     color: aliceblue;
 }
 .container
 .container_divs
 .city_graus
 .nome_cidade_tempo{
-    font-size: 2rem;
+    margin-top: 20px;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 
@@ -78,14 +81,14 @@
 .container_divs
 .city_graus
 .graus_city{
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 700;
-    margin-top: 15px;
     color: aliceblue;
 }
 .nubla_umidade{
     display: flex;
     color: aliceblue;
+    align-items: center;
 }
 
 
@@ -93,13 +96,14 @@
 .container_divs
 .nubla_umidade
 .nublado{
-    font-size: 1.5rem;
+    padding-top: 15px;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 .container_divs
 ._div_umidade
 .umidade{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 600;
     color: aliceblue;
 }
