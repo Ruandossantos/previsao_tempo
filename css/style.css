@@ -9,8 +9,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+
     background-image: linear-gradient(45deg, #000000,#000000c7,#000000e0);
 }
 
@@ -42,12 +43,13 @@
     height: 35px;
     width:80%;
     margin-right: 30px;
+    padding-left: 10px;
 }
 .container
 .container_divs
 .input_btn
 .nome_cidade::placeholder{
-    padding: 5px;
+    padding: 10px;
 }   
 .container
 .container_divs
