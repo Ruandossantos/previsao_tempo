@@ -6,12 +6,11 @@ function mostarnatela(dados){
     document.querySelector(".graus_city").innerHTML= "De momento " + Math.floor(dados.main.temp) + " ºc"
     document.querySelector(".nubla_umidade").innerHTML="Tempo " + dados.weather[0].description
     document.querySelector(".umidade").innerHTML="Humidade "+ dados.main.humidity
+    document.querySelector(".img_nuvem").src=`https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
 }
-
-
 async function buscarcidade(cidade) {
-   const dados = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveapi}&lang={pt_br}&units=metric`).then(resposta => resposta.json())
-    mostarnatela(dados)
+   const dados = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${chaveapi}&lang=pt_br&units=metric`).then(resposta => resposta.json())
+   mostarnatela(dados)
 }
 
 
