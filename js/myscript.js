@@ -2,10 +2,10 @@ const chaveapi = "8872410b5b1aedf65bcd58f2a7439315"
 
 function mostarnatela(dados){
     console.log(dados)
-    document.querySelector(".nome_cidade_tempo").innerHTML="O tempo em " + dados.name
-    document.querySelector(".graus_city").innerHTML="Fazendo " + dados.main.temp
-    document.querySelector(".nubla_umidade").innerHTML="No nomento " + dados.weather[0].description
-    document.querySelector(".img_nuvem").src=`https://openweathermap.org/img/wn/${dados.weather[0].icon}.png`
+    document.querySelector(".nome_cidade_tempo").innerHTML="Tempo em " + dados.name
+    document.querySelector(".graus_city").innerHTML= "De momento " + Math.floor(dados.main.temp) + " ºc"
+    document.querySelector(".nubla_umidade").innerHTML="Tempo " + dados.weather[0].description
+    document.querySelector(".umidade").innerHTML="Humidade "+ dados.main.humidity
 }
 
 
