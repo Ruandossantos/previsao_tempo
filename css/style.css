@@ -63,7 +63,7 @@
 .container .container_divs .city_graus {
     color: aliceblue;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .container .container_divs .city_graus .nome_cidade_tempo {
@@ -72,13 +72,14 @@
     font-weight: 600;
     border-right: 3px solid white;
     padding-right: 15px;
+    margin-right: 10px;
 }
 
 .container .container_divs .city_graus .graus_city {
     font-size: 1rem;
     font-weight: 700;
     color: aliceblue;
-    margin: 15px 50px 0px 0px;
+    margin:20px auto 0px 0px;
 }
 
 .nubla_umidade {
